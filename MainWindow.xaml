@@ -1,0 +1,59 @@
+﻿<Window x:Class="CalcBySmolikov.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CalcBySmolikov_70322-1" Height="267" Width="314" ResizeMode="NoResize">
+    <DockPanel LastChildFill="True" Background="Gray">
+        
+        <StackPanel Height="225" VerticalAlignment="Top">
+            <TextBox Name="TempBox" BorderBrush="Khaki" Background="Khaki" Height="auto" TextAlignment="Right"/>
+            <TextBox Name="ResultBox" BorderBrush="Khaki" Background="Khaki" Height="auto" Text="0" TextAlignment="Right"/>
+            <StackPanel Orientation="Horizontal" Background="Gray">
+                <RadioButton Name="rbtn_grad" GroupName="TrigonometrySwitch" Content="Грады" Margin="5"/>
+                <RadioButton Name="rbtn_rad" GroupName="TrigonometrySwitch" Content="Радианы" Margin="5"/>
+                <RadioButton Name="rbtn_deg" GroupName="TrigonometrySwitch" Content="Градусы" Margin="5" IsChecked="True"/>
+                <Button x:Name="ButtonDelete" Content="&lt;-" Margin="17,0,0,0" Width="46" Click="Del_One_Char_Click" />
+                <Button x:Name="ButtonClear" Content="CLEAR!" Background="Red" Margin="5,0,0,0" Width="46" Click="Clear_Button_Click"/>
+            </StackPanel>
+                            
+            <UniformGrid Rows="5" Columns="6" Height="163">
+                <Button x:Name="button1" Content="1" Margin="3" Click="Button_Click_1"/>
+                <Button x:Name="button2" Content="2" Margin="3" Click="Button_Click_1"/>
+                <Button x:Name="button3" Content="3" Margin="3" Click="Button_Click_1"/>
+                <Button x:Name="ButtonPlus" Content="+" Margin="3" Click="Button_Bin_Ops_Click"/>
+                <Button x:Name="ButtonSin" Content="sin(x)" Margin="3" Click="Trigon_Click"/>
+                <Button x:Name="ButtonTan" Content="tg(x)" Margin="3" Click="Trigon_Click"/>
+                <Button x:Name="button4" Content="4" Margin="3" Click="Button_Click_1"/>
+                <Button x:Name="button5" Content="5" Margin="3" Click="Button_Click_1"/>
+                <Button x:Name="button6" Content="6" Margin="3" Click="Button_Click_1"/>
+                <Button x:Name="ButtonMinus" Content="-" Margin="3" Click="Button_Bin_Ops_Click"/>
+                <Button x:Name="ButtonCos" Content="cos(x)" Margin="3" Click="Trigon_Click"/>
+                <Button x:Name="Button1Div" Content="1/x" Margin="3" Click="One_Div_Click"/>
+                <Button x:Name="button7" Content="7" Margin="3" Click="Button_Click_1"/>
+                <Button x:Name="button8" Content="8" Margin="3" Click="Button_Click_1"/>
+                <Button x:Name="button9" Content="9" Margin="3" Click="Button_Click_1"/>
+                <Button x:Name="ButtonMultiple" Content="*" Margin="3" Click="Button_Bin_Ops_Click"/>
+                <Button x:Name="ButtonLog" Content="lg" Margin="3" Click="Log_Click"/>
+                <Button x:Name="ButtonLn" Content="ln" Margin="3" Click="Log_Click"/>
+                <Button x:Name="comma"  Content="," Margin="3" Click="Button_comma"/>
+                <Button x:Name="button0" Content="0" Margin="3" Click="Button_Click_1"/>
+                    <Button x:Name="pi" Content="pi" Margin="3" Click="Pi_Click"/>
+                <Button x:Name="ButtonDivide" Content="/" Margin="3" Click="Button_Bin_Ops_Click"/>
+                <Button x:Name="ButtonReverse" Content="+/-" Margin="3" Click="Reverse_Click"/>
+                <Button x:Name="ButtonExp" Content="√"  Margin="3" Click="Button_Click_Sqrt"/>
+                <Button x:Name="ButtonExit" Content="EXIT" Margin="3" Background="Red" Click="Button_Exit_Click"/>
+                <Button x:Name="ButtonAsin" Content="Arcsin" Margin="3" Click="Trigon_Click"/>
+                <Button x:Name="ButtonAcos" Content="Arccos" Margin="3" Click="Trigon_Click"/>
+                <Button x:Name="ButtonAtan" Content="Arctan" Margin="3" Click="Trigon_Click" />
+                <Button x:Name="ButtonPow" Content="^" Margin="3" Click="Button_Bin_Ops_Click"/>
+                <Button x:Name="ButtonEqual" Content="="  Margin="3" Click="Button_Click_Equal" />
+
+
+
+
+
+            </UniformGrid>
+            
+        </StackPanel>
+        
+    </DockPanel>
+</Window>
